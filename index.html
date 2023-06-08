@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PerkenalanApp</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Pacifico&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <audio src="img/Tulus Cahaya.mp3" autoplay loop></audio>
+  
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">PerkenalanApp.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Selamat</a>
+        <a href="#menu">Penjelasan</a>
+        <a href="#contact">Perkenalan</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Assalamualaikum <span>Hai.. Sheila</span></h1>
+        <p>
+          <b>
+             Selamat datang di web Perkenalan PART II
+          </b>
+        </p>
+        <a href="#about" class="cta"> Tunjukan Saya</a>
+      </main>
+    </section>
+
+    <!-- Hero Section end -->
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Congratulation </span></h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/wisuda.png" alt="Wisuda" />
+        </div>
+        <div class="content">
+          <p>
+            Hai Sheila... apa kabar? Semoga tetep baik dan sehat yah.<br/> 
+            Oh iya terima kasih juga kemarin sudah mau membuka halaman webnya
+            yang linknya aku titipin ke kak didi dyah. aku titipan karna aku chat ke kamu di wa gak bisa, sepertinya di block yah... aku chat pke nomor 0857-1758-1682, minta di buka lgi supaya bisa dichat langsung plisss :) <br/> <br/>
+            Dan juga aku ucapkan selamat yah.. <br/>
+            atas diwisuda s1 profesi kamu... congratulation.... semoga makin sukses kedepannya...
+          </p>
+          <p>
+            
+          </p>
+          <a href="#menu" class="cta"> Tunjukan Saya</a>
+          <br>
+        </br>
+        <br>
+      </br>
+      <br>
+    </br>
+    <br>
+  </br>
+  <br>
+</br>
+<br>
+</br>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+    <!-- menu Section Start -->
+    <section id="menu" class="menu">
+      <h2>
+        <span>Penjelasan</span>
+      </h2>
+      <div class="content">
+      <p>
+        Sebelumnya aku udah pernah jelaskan yah di web sebelumnya tentang tujuanku buat bgnian, tujuannya masih sama kok  klo lupa bisa di buka lgi yah...
+       <br/>
+       Oke sheila skrng masuk ke tahap perkenalan lagi ya, mungkin akan ada beberapa kolom yang perlu di jawab, nanti didalamnya akan ada juga informasi mengenai aku<br/>
+       Sebelum lanjut ke halaman selanjutnya, akan ada halaman validasi lagi, untuk memastikan bahwa ini adalah beneran kamu yang membuka
+      <br/>
+      </p>
+     <div class="row">
+        
+      <img src="img/form-perkenalan-bg.svg" alt="tentang kami" />
+        <form name="formperkenalan" id="loginform" action="perkenalan-status.php" method="post" onsubmit="return validateForm()">
+        <div class="input-group">
+          <i data-feather="instagram"></i>
+          <input type="text" name="ig" placeholder="Id IG"  required/>
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" name="phone" placeholder="Kelas Angdas Di YISC" required/>
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" name="angkatan" placeholder="Kota asal kamu di jawa barat" required />
+        </div>
+        
+        <button type="submit"  a href="./perkenalan-status.php" class="cta">Kirim pesan</button>
+      </form>
+    </div>
+      
+    </section>
+    
+    
+    <!-- Footer Start -->
+
+    <footer>
+      <div class="sosials">
+        <a href="#"> <i data-feather="instagram"></i></a>
+        <a href="#"> <i data-feather="facebook"></i></a>
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="credit">
+          <p>Created by <a href=""> penulis</a>| &copy;2023.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Fetaher Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- my Javascript -->
+    <script>
+
+      //toggle class active
+const navbarNav = document.querySelector(".navbar-nav");
+
+//ketika humbergur menu di klik
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+};
+
+// klik di luar side bar untuk menghilangkan nav
+
+const hamburger = document.querySelector("#hamburger-menu");
+
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});
+
+
+
+function validateForm() {
+  if (document.forms["formperkenalan"]["ig"].value != "ssetiani63") {
+    alert("Akun IG yang diinput salah, huruf kecil semua ya");
+    document.forms["formperkenalan"]["ig"].focus();
+    return false;
+  }
+  if (document.forms["formperkenalan"]["phone"].value != "filosofi") {
+    alert("Nama Angkatan dasar di YISC Yang diinput salah, huruf kecil semua ya");
+    document.forms["formperkenalan"]["phone"].focus();
+    return false;
+  }
+  if (document.forms["formperkenalan"]["angkatan"].value != "kuningan") {
+    alert("Kota Asal di jawa barat yang diinput salah, huruf kecil semua ya");
+    document.forms["formperkenalan"]["angkatan"].focus();
+    return false;
+  }
+  
+}
+
+
+
+    </script>
+  </body>
+</html>
