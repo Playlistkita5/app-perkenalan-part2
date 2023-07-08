@@ -20,17 +20,18 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <audio src="img/Tulus Cahaya.mp3" autoplay loop></audio>
+    <audio id="myAudio">
+      <source src="img/Tulus Cahaya.mp3" type="audio/ogg" />
+      <source src="img/Tulus Cahaya.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
   
     <!-- Navbar Start -->
     <nav class="navbar">
       <a href="#" class="navbar-logo">PerkenalanApp.</a>
 
       <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">Selamat</a>
-        <a href="#menu">Penjelasan</a>
-        <a href="#contact">Perkenalan</a>
+       
       </div>
 
       <div class="navbar-extra">
@@ -50,7 +51,7 @@
              Selamat datang di web Perkenalan PART II
           </b>
         </p>
-        <a href="#about" class="cta"> Tunjukan Saya</a>
+        <a href="#about" class="cta" onclick="playAudio()" type="button"> Tunjukan Saya</a>
       </main>
     </section>
 
@@ -70,6 +71,43 @@
             yang linknya aku titipin ke kak didi dyah. aku titipan karna aku chat ke kamu di wa gak bisa, sepertinya di block yah... aku chat pke nomor 0857-1758-1682, minta di buka lgi supaya bisa dichat langsung plisss :) <br/> <br/>
             Dan juga aku ucapkan selamat yah.. <br/>
             atas diwisuda s1 profesi kamu... congratulation.... semoga makin sukses kedepannya...
+          </p>
+          <p>
+            
+          </p>
+          <a href="#sehat" class="cta"> Tunjukan Saya</a>
+          <br>
+        </br>
+        <br>
+      </br>
+      <br>
+    </br>
+    <br>
+  </br>
+  <br>
+</br>
+<br>
+</br>
+        </div>
+      </div>
+
+      <!-- About Section Start -->
+    <section id="sehat" class="about">
+      <h2><span>Semangat dan Doa </span></h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/doa.png" alt="Wisuda" />
+        </div>
+        <div class="content">
+          <p>
+           OH iya, katanya kemarin kamu abis sakit ya...?<br/> 
+           aku dikabarin kak didi katanya kamu dirawat, agak kaget juga sih, kasian gitu harus di rawat. <br/>
+           jaga kesehatan dan kondisi ya.. semoga selalu sehat. <br/>
+           kemairn aku sebenernya mau titipin sesuatu ke kak didi kalo mau nengokin, tpi ternyata enggak jadi, kamu keburu dibawa pulang, tapi dengernya alhamdulillah juga sih.  dan juga kak didi ga jdi nengokin :) aku dokan semoga sehat selalu dan bahagia ya... <br/>
+             <br/> <br/>
+            oh iya sebenernya aku mau kirim ini udah lama, tpi liat waktu yang pas dulu..he..he <br/>
+            
           </p>
           <p>
             
@@ -121,7 +159,7 @@
           <input type="text" name="angkatan" placeholder="Kota asal kamu di jawa barat" required />
         </div>
         
-        <button type="submit"  a href="./perkenalan-status.php" class="cta">Kirim pesan</button>
+        <button type="submit"  a href="./perkenalan-status.html" class="cta">Kirim pesan</button>
       </form>
     </div>
       
@@ -194,6 +232,16 @@ function validateForm() {
   
 }
 
+var x = document.getElementById("myAudio");
+
+      function playAudio() {
+        x.play();
+      }
+
+      function pauseAudio() {
+        x.pause();
+      }
+    </script>
 
 
     </script>

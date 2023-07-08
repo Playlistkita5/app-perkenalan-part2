@@ -25,10 +25,7 @@
       <a href="#" class="navbar-logo">PerkenalanApp.</a>
 
       <div class="navbar-nav">
-        <a href="index.html">Home</a>
-        <a href="index.html/about">Maksud dan Tujuan</a>
-        <a href="#menu">Penjelasan</a>
-        <a href="#contact">Perkenalan</a>
+        
       </div>
 
       <div class="navbar-extra">
@@ -54,48 +51,18 @@
         </p><br/>
         <p>
           Sebelum masuk pertanyaan yang lain, dan ga banyak basa basi lagi, kita masuk ke pertanyaan inti yah.. 
-        </p><br/>
-        <form action="akhir-halaman.php" method="post" name="form1" id="form1">
-        <div class="input-group">
-        <label for="name">Nama Lengkap Kamu ?</label>
-        <input type="text" id="name" name="name" ><br><br>
-        </div>
-        <div class="input-group">
-        <label for="email" style="margin-right: 25px;">
-          Sheila mohon maaf apabila pertanyaan ini membuat kmu merasa tidak nyaman, tetapi ini sesuai dengan tujuanku yaitu ingin mengenalmu dan tahap pernekalan. sheila apakah kamu sudah punya pasangn ?
-      </label><br>
-      
-      <input type="radio" id="status-pasangan" name="status-pasangan" value="BELUM">
-      <label for="belum">BELUM PUNYA</label><br>
-      <input type="radio" id="status-pasangan" name="status-pasangan" value="SUDAH">
-      <label for="sudah">SUDAH PUNYA</label><br/>
-   
-        </div>
-      <input type="submit" a href="akhir-halaman.php" name="submit" value="Tunjukan Saya" class="cta">
-      
-    </form>
+       </p><br/> 
 
-    <?php
- 
-    // Check If form submitted, insert form data into users table.
-    if(isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $status = $_POST['status-pasangan'];
-                
-        // include database connection file
-        $server = "localhost";
-        $username ="root";
-        $password = "";
-        $databases ="appperkenalan";
+       <iframe align-center
+    src="https://forms.office.com/r/5vXTzJxRGf"
+    width="450"
+    height="640"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    >Memuat…</iframe
+  >
         
-        $db = mysqli_connect($server, $username, $password, $databases);
-                
-        // Insert user data into table
-        mysqli_query($db, "INSERT INTO perkenalan(nama, status) VALUES('$name','$status')");
-        
-        
-    }
-    ?>
       
     </section>
     <!-- Navbar End -->
