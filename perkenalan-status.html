@@ -97,25 +97,6 @@
     <!-- my Javascript -->
     <script src="js/script.js"></script>
 
-    <script>
-      document.addEventListener("click", function (e) {
-        if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-          navbarNav.classList.remove("active");
-        }
-      });
-
-      function validateForm() {
-        if ((document.forms["form1"]["status-pasangan"].value = "SUDAH")) {
-          alert("Terima kasih sudah menjawab jujur :( :( :(");
-          document.forms["form1"]["status-pasangan"].focus();
-          return false;
-        }
-      }
-      document.getElementById("form1").addEventListener("submit", myFunction);
-
-      function myFunction() {
-        alert("terima kasih sudah menjawab dengan jujur yahhh ");
-      }
-    </script>
+   
   </body>
 </html>
